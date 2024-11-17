@@ -1,5 +1,4 @@
-
-
+/* Práctica2_Alvaro_García_Martín.css */
 
 * {
     margin: 0;
@@ -41,14 +40,73 @@ body {
     width: 60px;
     background-color: #333;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Coloca los elementos verticalmente */
+    align-items: center; 
+    padding: 10px; /* Espaciado interno de la barra lateral */
+    gap: 20px; /* Espacio entre los elementos de la barra */
 }
 
 .barralateral-item {
     font-size: 24px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* TABLERO PRINCIPAL*/
+.tablero {
+    margin-left: 80px;
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    gap: 20px;
+    padding: 20px;
+}
+
+.columna {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.columna h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.carta {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fecha {
+    background-color: green;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+}
+
+.fecha2 {
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+}
+
+.boton {
+    background-color: #ff6b6b;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
