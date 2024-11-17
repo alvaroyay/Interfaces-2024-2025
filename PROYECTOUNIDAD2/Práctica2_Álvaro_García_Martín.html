@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño al tamaño del dispositivo para ser responsivo -->
     <title>Práctica Álvaro_García</title>
     <link rel="stylesheet" href="Práctica2_Alvaro_García_Martín.css">
 </head>
 <body>
-    <header class="header">
+    <header class="cabezera">
         <nav class="barranavegacion">
             <div class="barranavegacion-item">Statistics</div>
             <div class="barranavegacion-item">Orders</div>
@@ -17,10 +17,43 @@
         </nav>
     </header>
 
+<main class="tablero">
+    <section class="columna">
+        <h2>Shipments to do</h2>
+        <div class="carta">example <span class="fecha">16 de nov</span></div>
+        <div class="carta">example <span class="fecha">8 de dic</span></div>
+        <div class="carta">example <span class="fecha">20 de dic</span></div>
+        <button class="boton">+ add</button>
+    </section>
+    
+    <section class="columna">
+        <h2>Printing in progress</h2>
+        <div class="carta">example <span class="fecha">1/4</span></div>
+        <div class="carta">example <span class="fecha">2/6</span></div>
+        <div class="carta">example <span class="fecha">12/17</span></div>
+        <button class="boton">+ add</button>
+    </section>
+
+    <section class="columna">
+        <h2>Done</h2>
+        <div class="carta">example <span class="fecha2">17 de oct</span></div>
+        <div class="carta">example <span class="fecha2">21 de oct</span></div>
+        <div class="carta">example <span class="fecha2">24 de oct</span></div>
+        <div class="carta">example <span class="fecha2">28 de oct</span></div>
+        <button class="boton">+ add</button>
+    </section>
+</main>
+
     <aside class="barralateral">
-        <div class="barralateral-item">☰</div> <!-- ICONOS PROVISIONALES PARA VER COMO QUEDA -->
-        <div class="barralateral-item">🖨️</div>
-        <div class="barralateral-item">📈</div>
-    </aside>
+    <div class="barralateral-item">
+        <img src="imagen 1.png" alt="imagen" style="width: 24px; height: 24px;">
+    </div>
+    <div class="barralateral-item.">
+        <img src="imagen 2.png" alt="imagen" style="width: 24px; height: 24px;">
+    </div>
+    <div class="barralateral-item">
+        <img src="imagen 3.png" alt="imagen" style="width: 24px; height: 24px;">
+    </div>
+</aside>
 </body>
 </html>
