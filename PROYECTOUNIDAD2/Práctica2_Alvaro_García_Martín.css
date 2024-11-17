@@ -8,7 +8,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    background-image: url('nubes.webp'); 
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+     background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: black; /* Asegura que el texto sea legible sobre el fondo */
 }
 
 /* CABEZERA */
@@ -102,11 +106,34 @@ body {
 }
 
 .boton {
-    background-color: #ff6b6b;
+    background-color: grey;
     color: white;
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+/* Pie página */
+.pie {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.links1{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redessociales {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
 }
