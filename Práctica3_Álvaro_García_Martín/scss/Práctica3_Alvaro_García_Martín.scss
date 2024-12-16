@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('nubes.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+  }
+  
+  .cabezera {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .barranavegacion {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .barranavegacion-item {
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Barra Lateral */
+  .barralateral {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 50px;
+    height: calc(100% - 60px);
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+  
+  .barralateral-item {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Tablero Principal */
+  .tablero {
+    margin-left: 220px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .columna {
+    background-color: #333;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: calc(100vh - 120px); /* Altura máxima para evitar que se corte contenido */
+    overflow-y: auto; /* Scroll en caso de columnas largas */
+  }
+  
+  .columna h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .carta {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fecha {
+    background-color: green;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .fecha2 {
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .boton {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Pie de Página */
+  .pie {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .links1, .redessociales {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  /* Estilos Responsivos */
+  
+  /* Tablet (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .barralateral {
+        width: 30px;
+    }
+  
+    .tablero {
+        margin-left: 170px;
+        flex-wrap: wrap;
+    }
+  
+    .columna {
+        width: 45%; /* Reduce el ancho de las columnas */
+    }
+  }
+  
+  /* Móvil (max-width: 768px) */
+  @media (max-width: 768px) {
+    .barralateral {
+        display: none; /* Ocultar barra lateral en móviles */
+    }
+  
+    .tablero {
+        margin-left: 0;
+        flex-direction: column; /* Apilar columnas verticalmente */
+    }
+  
+    .columna {
+        width: 100%; /* Usar todo el ancho disponible */
+        max-height: 80vh; /* Evitar desbordamiento */
+        overflow-y: auto;
+    }
+  
+    /* Ajustar botón para evitar que quede fuera de vista */
+    .boton {
+        position: sticky; /* Botón permanece visible al hacer scroll */
+        bottom: 0;
+        background-color: grey;
+    }
+  
+    /* Pie más compacto */
+    .pie {
+        font-size: 12px;
+    }
+  }
