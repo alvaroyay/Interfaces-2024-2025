@@ -10,24 +10,29 @@
     <header>
         <div class="logo">
             
-           
+    
             <picture>
                  <!--      WebP      -->
-             <source srcset="Media/logowebp600.webp" type="image/webp" media="(min-width: 800px)" sizes="10vw">
-             <source srcset="Media/logowebp.webp" type="image/webp" media="(min-width: 400px)" sizes="15vw">
+             <source srcset="Media/logowebp600.webp" type="image/webp" media="(min-width: 800px)" sizes="15vw">
+             <source srcset="Media/logowebp.webp" type="image/webp" media="(min-width: 400px)" sizes="10vw">
              
              <!--      JPEG       -->
-             <source srcset="Media/logojpeg600.jpeg" type="image/jpeg" media="(min-width: 800px)" sizes="10vw">
-             <source srcset="Media/logojpeg.jpeg" type="image/jpeg" media="(min-width: 400px)" sizes="15vw">
+             <source srcset="Media/logojpeg600.jpeg" type="image/jpeg" media="(min-width: 800px)" sizes="15vw">
+             <source srcset="Media/logojpeg.jpeg" type="image/jpeg" media="(min-width: 400px)" sizes="10vw">
              
              <!--    Imagen por defecto (png)    -->
-             <img src="Media/logopng.png" alt="Logotipo de la empresa" width="300">
+             <img src="Media/logopng.png" alt="Logotipo de la empresa" >
             </picture>
 
-
-
-
-
+            <audio autoplay  loop controls  muted> <!-- Etiqueta autoplay empieza el audio nada mas cargar la pagina (solo funciona si esta muteado, controsl hace visibles los controles del reproductor del audio
+                loop hace que el audio se reproduzca en bucle , muted hace que el audio empiece silenciado para que funciona la etiqueta autoplay,la etiqueta controls solo es para probar si va el audio -->
+                <!-- Formato OGG -->
+                <source src="Media/siuogg.ogg" type="audio/ogg">
+                <!-- Formato MP3 -->
+                <source src="Media/siump3.mp3" type="audio/mp3">
+                El navegador no soporta el audio 
+            </audio>
+            
         </div>
         <nav>
             <ul>
@@ -38,6 +43,7 @@
             </ul>
         </nav>
     </header>
+   
     
     <section id="inicio" class="hero">
         <h1>Bienvenidos a Empresa XYZ</h1>
@@ -45,6 +51,20 @@
         <a href="#contacto" class="btn">Contáctanos</a>
     </section>
     
+    <section id="videos" > 
+       <h1> Videos </h1>
+        <video autoplay controls loop muted width="360" height="240">
+            <source src="Media/VideoCoporativoMP4.mp4" type="video/mp4">
+            <source src="Media/VideoCorporativoOGV.ogv" type="video/ogv">
+            No está soportado el vídeo
+        </video>
+      
+        <iframe width="420" height="345"
+	        src="https://www.youtube.com/embed/vKlwljDW0ps?playlist=kxR_sQt9zxY&loop=1&controls=1&autoplay=1&mute=1">
+	    </iframe> <!-- Se reproduce automáticamente solo si añadimos mute -->
+
+    </section>
+
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="service-container">
