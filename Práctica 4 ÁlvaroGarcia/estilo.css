@@ -8,40 +8,63 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #f3bb02;
+
 }
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    font-size: larger;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-}
-.hero {
+.Imageninicio {
     background: #f4f4f4;
-    padding: 50px;
+    padding: 200px;
+    background-image: url('Media/IMAGENFONDO.JPG');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
 }
-.service-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.deportesdisponibles {
+    background-color: #f3bb02;
 }
-.service {
-    background: #ddd;
-    padding: 20px;
-    border-radius: 5px;
+.deporte {
+    background-color: #f3bb02;
+    padding: 10px;
 }
 footer {
-    background: #333;
+    background: #ff9101;
     color: white;
     padding: 10px;
 }
 .logo img {
-    
-    
 max-height: 100px;
 }
-   
+.Videos{
+    background-color: #f3bb02;
+}
+.balonfutbol {
+    position: absolute;
+    left: 40px;
+    top: 40%;
+    transition:  transform 5s; /*Gira el balon*/
+}
+
+.balonbasket
+{
+	animation-name: botar;  /*Animacion efecto botar balon se reproduce infinitas veces La animación comienza lentamente, se acelera hacia la mitad y luego vuelve a ser más lenta hacia el final.
+   y se va alternando el sentido de la animacion para conseguir el efecto de bote */
+	animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;				
+		animation-direction: alternate;	
+	}
+
+	@keyframes botar {
+		0% {transform: translateY(0) rotate(0);}				 /*Se mueve el balon 100 px y hace 0.2 giros en la animacion*/
+		100% {transform: translateY(100px) rotate(0.2turn);}
+	}
+
+    .balonfutbol:hover {
+        transform: rotate(20turn); /*Gira el balon*/
+    }
